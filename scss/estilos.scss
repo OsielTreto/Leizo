@@ -1,0 +1,424 @@
+$principal:#FF7514;
+$principaldegradado:#913c00;
+
+@font-face {
+    font-family: Cindy Julia Italic;
+    src: url("/font/Cindy Julia Italic.ttf");
+
+}
+
+/*GO TOP*/
+.go-top-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: -1;
+
+}
+
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: $principal;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.go-top-button i {
+    position: absolute;
+    font-size: 1.3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    transition: .5s;
+}
+
+.show {
+    z-index: 10;
+}
+
+.show .go-top-button {
+    animation: popup .5s ease-in-out;
+    width: 3.6rem;
+    height: 3.6rem;
+    z-index: 11;
+    
+}
+
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+    0% {
+        width: 0rem;
+        height: 0rem;
+    }
+
+    50% {
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+
+    100% {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+}
+
+.centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.informacion {
+    font-family: 'Abel', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+body {
+    background: rgb(34, 34, 34);
+
+}
+
+.info {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    height: 100%;
+
+}
+
+.proyectos {
+    font-family: 'Signika', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.osiel {
+    font-family: 'Signika', sans-serif;
+    font-size: 80px;
+    color: rgb(216, 216, 216);
+}
+
+.desarrollador {
+    font-family: 'Signika', sans-serif;
+    font-size: 80px;
+    color: rgb(29, 29, 29);
+}
+
+.redsocial_inicio {
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    transition: all .3s;
+}
+
+.redsocial_inicio:hover {
+    text-shadow: 0 0 15px #ffffff93;
+    transform: scale(1.2);
+}
+
+.tituloinformacion {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+.descripcioninformacion {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #000000;
+}
+
+.descripcioninformaciondos {
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.listatecnologias {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #000000;
+
+}
+
+.texto_principal {
+    font-family: Cindy Julia Italic;
+    font-size: 45px;
+}
+
+.textoA {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.descripcion {
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.barra {
+    background: rgb(34, 34, 34);
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.padre {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hijo {
+    margin: 0 auto;
+}
+
+
+
+.titulo_proyecto {
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+.descripcion_proyecto {
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.carrusel {
+    background-image: url(/images/fondo.jpg);
+    background-attachment: fixed;
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    padding-top: 4rem;
+
+}
+
+.mydiv {
+    width: 100%;
+    height: 94vh;
+    background: linear-gradient(150deg, #fd7a00, #c20000, #ffee00);
+    background-size: 400% 300%;
+    animation: BgGradient 10s ease infinite;
+}
+
+.fuenteA {
+    font-size: 18px;
+    color: $principal;
+}
+
+.fuenteB {
+    font-size: 16px;
+    color: white;
+    ;
+}
+
+.fuenteC {
+    color: white;
+}
+
+.pie {
+    background: rgb(50, 50, 50);
+    background: linear-gradient(90deg, rgb(34, 34, 34) 0%, rgba(0, 0, 0, 1) 100%);
+    padding-left: 7rem;
+    padding-right: 7rem;
+    width: 100%;
+    height: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all .5s;
+
+}
+
+a:hover {
+    color: $principaldegradado;
+    text-decoration: none;
+
+}
+
+.redsocial {
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+    transition: all .5s;
+
+}
+
+.redsocial:hover {
+
+    color: $principaldegradado;
+}
+
+.correo {
+    transition: all .5s;
+
+}
+
+.correo:hover {
+    color: $principaldegradado;
+
+}
+
+
+.flip-card {
+    border-radius: 20px;
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 800ms;
+    transform-style: preserve-3d;
+    background: linear-gradient(150deg, #494949, #181818);
+    background-size: 400% 300%;
+    animation: BgGradient 10s ease infinite;
+    background-attachment: fixed;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(150deg, #ff761486, #db000079);
+    background-size: 400% 300%;
+    animation: BgGradient 3s ease infinite;
+    background-attachment: fixed;
+}
+
+.centrar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadow {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: $principal;
+    font-size: 15px;
+    text-align: center;
+}
+
+.shadow::before,
+.shadow::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    background: linear-gradient(250deg, #ff0000, #FF7514, #ff0c0c, #FF7514, #ff0000, #FF7514, #ff3c00, #FF7514);
+    background-size: 300%;
+    animation: shadow 10s linear infinite;
+}
+
+
+.shadow::after {
+    filter: blur(10px);
+}
+
+.shadowpadre,
+.shadowhijo {
+    transition: all .5s;
+}
+
+.shadowpadre:hover .shadowhijo {
+    filter: blur(2px);
+}
+
+.shadowpadre .shadowhijo:hover {
+    filter: blur(0px);
+    transform: scale(1.1);
+}
+
+
+
+
+@keyframes shadow {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+
+}
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
