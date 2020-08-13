@@ -95,7 +95,7 @@ body {
 .proyectos {
   font-family: 'Signika', sans-serif;
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   text-shadow: 2px 2px 4px #000000; }
 
 .osiel {
@@ -128,7 +128,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   text-align: justify;
-  color: #000000; }
+  color: #000000;
+  padding: 0.3rem; }
 
 .descripcioninformaciondos {
   color: white;
@@ -153,7 +154,8 @@ body {
   color: white;
   font-size: 1.2rem;
   text-shadow: 2px 2px 4px #000000;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  padding: 1rem; }
 
 .barra {
   background: #222222; }
@@ -205,10 +207,10 @@ body {
 .mydiv {
   width: 100%;
   height: 94vh;
-  background: linear-gradient(150deg, #fd7a00, #c20000, #ffee00);
-  background-size: 400% 300%;
-  -webkit-animation: BgGradient 10s ease infinite;
-          animation: BgGradient 10s ease infinite; }
+  background: linear-gradient(150deg, #fd8f00, #c20000, #fd7200, #c20000);
+  background-size: 400% 100%;
+  -webkit-animation: BgGradient 5s ease infinite;
+          animation: BgGradient 5s ease infinite; }
 
 .fuenteA {
   font-size: 1rem;
@@ -320,7 +322,7 @@ a:hover {
 .shadow {
   position: relative;
   width: 300px;
-  height: 300px;
+  height: 250px;
   background: #FF7514;
   font-size: 15px;
   text-align: center; }
@@ -330,10 +332,10 @@ a:hover {
   position: absolute;
   z-index: -1;
   content: '';
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  top: -1px;
-  left: -1px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  top: -4px;
+  left: -4px;
   background: linear-gradient(250deg, #ff0000, #FF7514, #ff0c0c, #FF7514, #ff0000, #FF7514, #ff3c00, #FF7514);
   background-size: 300%;
   -webkit-animation: shadow 10s linear infinite;
@@ -349,8 +351,8 @@ a:hover {
   transition: all .5s; }
 
 .shadowpadre:hover .shadowhijo {
-  -webkit-filter: blur(2px);
-          filter: blur(2px); }
+  -webkit-filter: blur(1.5px);
+          filter: blur(1.5px); }
 
 .shadowpadre .shadowhijo:hover {
   -webkit-filter: blur(0px);
