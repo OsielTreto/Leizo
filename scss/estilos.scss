@@ -50,7 +50,7 @@ $principaldegradado:#913c00;
     width: 3.6rem;
     height: 3.6rem;
     z-index: 11;
-    
+
 }
 
 .show i {
@@ -84,7 +84,7 @@ $principaldegradado:#913c00;
 .informacion {
     font-family: 'Abel', sans-serif;
     color: rgb(255, 255, 255);
-    font-size: 40px;
+    font-size: 3rem;
 }
 
 body {
@@ -102,24 +102,24 @@ body {
 .proyectos {
     font-family: 'Signika', sans-serif;
     color: rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: 4rem;
     text-shadow: 2px 2px 4px #000000;
 }
 
 .osiel {
     font-family: 'Signika', sans-serif;
-    font-size: 80px;
-    color: rgb(216, 216, 216);
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
 }
 
 .desarrollador {
     font-family: 'Signika', sans-serif;
-    font-size: 80px;
     color: rgb(29, 29, 29);
+    font-size: 4rem;
 }
 
 .redsocial_inicio {
-    font-size: 30px;
+    font-size: 3rem;
     color: white;
     padding: 10px;
     transition: all .3s;
@@ -132,25 +132,25 @@ body {
 
 .tituloinformacion {
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .descripcioninformacion {
     font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
+    font-size: 1rem;
     text-align: justify;
     color: #000000;
 }
 
 .descripcioninformaciondos {
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
 }
 
 .listatecnologias {
     font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
+    font-size: 1rem;
     text-align: justify;
     color: #000000;
 
@@ -158,17 +158,17 @@ body {
 
 .texto_principal {
     font-family: Cindy Julia Italic;
-    font-size: 45px;
+    font-size: 3rem;
 }
 
 .textoA {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .descripcion {
     color: white;
-    font-size: 20px;
+    font-size: 1.2rem;
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Open Sans', sans-serif;
 
@@ -177,8 +177,6 @@ body {
 
 .barra {
     background: rgb(34, 34, 34);
-    padding-left: 7rem;
-    padding-right: 7rem;
 }
 
 * {
@@ -211,7 +209,7 @@ body {
 .descripcion_proyecto {
     color: white;
     text-align: justify;
-    font-size: 14px;
+    font-size: .9rem;
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -239,12 +237,12 @@ body {
 }
 
 .fuenteA {
-    font-size: 18px;
+    font-size: 1rem;
     color: $principal;
 }
 
 .fuenteB {
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
     ;
 }
@@ -421,4 +419,11 @@ a:hover {
     100% {
         background-position: 0% 50%;
     }
+}
+
+@media (min-width: 768px){
+	html{
+		font-size: 16px;	
+	}
+
 }

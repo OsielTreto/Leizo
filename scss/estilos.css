@@ -1,3 +1,391 @@
+@font-face {
+  font-family: Cindy Julia Italic;
+  src: url("/font/Cindy Julia Italic.ttf"); }
+/*GO TOP*/
+.go-top-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: -1; }
 
+.go-top-button {
+  width: 0rem;
+  height: 0rem;
+  background: #FF7514;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1; }
+
+.go-top-button i {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+.show {
+  z-index: 10; }
+
+.show .go-top-button {
+  -webkit-animation: popup .5s ease-in-out;
+          animation: popup .5s ease-in-out;
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 11; }
+
+.show i {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1); }
+
+@-webkit-keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem; }
+  50% {
+    width: 4.2rem;
+    height: 4.2rem; }
+  100% {
+    width: 3.6rem;
+    height: 3.6rem; } }
+
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem; }
+  50% {
+    width: 4.2rem;
+    height: 4.2rem; }
+  100% {
+    width: 3.6rem;
+    height: 3.6rem; } }
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.informacion {
+  font-family: 'Abel', sans-serif;
+  color: white;
+  font-size: 40px; }
+
+body {
+  background: #222222; }
+
+.info {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: 100%; }
+
+.proyectos {
+  font-family: 'Signika', sans-serif;
+  color: white;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px #000000; }
+
+.osiel {
+  font-family: 'Signika', sans-serif;
+  font-size: 1rem;
+  color: #d8d8d8; }
+
+.desarrollador {
+  font-family: 'Signika', sans-serif;
+  font-size: 80px;
+  color: white; }
+
+.redsocial_inicio {
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+.redsocial_inicio:hover {
+  text-shadow: 0 0 15px #ffffff93;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
+
+.tituloinformacion {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px; }
+
+.descripcioninformacion {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  text-align: justify;
+  color: #000000; }
+
+.descripcioninformaciondos {
+  color: white;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif; }
+
+.listatecnologias {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  text-align: justify;
+  color: #000000; }
+
+.texto_principal {
+  font-family: Cindy Julia Italic;
+  font-size: 45px; }
+
+.textoA {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
+
+.descripcion {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Open Sans', sans-serif; }
+
+.barra {
+  background: #222222;
+  padding-left: 7rem;
+  padding-right: 7rem; }
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.padre {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.hijo {
+  margin: 0 auto; }
+
+.titulo_proyecto {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px; }
+
+.descripcion_proyecto {
+  color: white;
+  text-align: justify;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif; }
+
+.carrusel {
+  background-image: url(/images/fondo.jpg);
+  background-attachment: fixed;
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  padding-top: 4rem; }
+
+.mydiv {
+  width: 100%;
+  height: 94vh;
+  background: linear-gradient(150deg, #fd7a00, #c20000, #ffee00);
+  background-size: 400% 300%;
+  -webkit-animation: BgGradient 10s ease infinite;
+          animation: BgGradient 10s ease infinite; }
+
+.fuenteA {
+  font-size: 18px;
+  color: #FF7514; }
+
+.fuenteB {
+  font-size: 16px;
+  color: white; }
+
+.fuenteC {
+  color: white; }
+
+.pie {
+  background: #323232;
+  background: -webkit-gradient(linear, left top, right top, from(#222222), to(black));
+  background: linear-gradient(90deg, #222222 0%, black 100%);
+  padding-left: 7rem;
+  padding-right: 7rem;
+  width: 100%;
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+
+a:hover {
+  color: #913c00;
+  text-decoration: none; }
+
+.redsocial {
+  font-size: 30px;
+  color: white;
+  padding: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+
+.redsocial:hover {
+  color: #913c00; }
+
+.correo {
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+
+.correo:hover {
+  color: #913c00; }
+
+.flip-card {
+  border-radius: 20px;
+  width: 250px;
+  height: 350px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
+
+.flip-card-inner {
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  background: linear-gradient(150deg, #494949, #181818);
+  background-size: 400% 300%;
+  -webkit-animation: BgGradient 10s ease infinite;
+          animation: BgGradient 10s ease infinite;
+  background-attachment: fixed; }
+
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
+.flip-card-front,
+.flip-card-back {
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
+.flip-card-back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background: linear-gradient(150deg, #ff761486, #db000079);
+  background-size: 400% 300%;
+  -webkit-animation: BgGradient 3s ease infinite;
+          animation: BgGradient 3s ease infinite;
+  background-attachment: fixed; }
+
+.centrar {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.shadow {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #FF7514;
+  font-size: 15px;
+  text-align: center; }
+
+.shadow::before,
+.shadow::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+  background: linear-gradient(250deg, #ff0000, #FF7514, #ff0c0c, #FF7514, #ff0000, #FF7514, #ff3c00, #FF7514);
+  background-size: 300%;
+  -webkit-animation: shadow 10s linear infinite;
+          animation: shadow 10s linear infinite; }
+
+.shadow::after {
+  -webkit-filter: blur(10px);
+          filter: blur(10px); }
+
+.shadowpadre,
+.shadowhijo {
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+
+.shadowpadre:hover .shadowhijo {
+  -webkit-filter: blur(2px);
+          filter: blur(2px); }
+
+.shadowpadre .shadowhijo:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+
+@-webkit-keyframes shadow {
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: 300%; }
+  100% {
+    background-position: 0 0; } }
+
+@keyframes shadow {
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: 300%; }
+  100% {
+    background-position: 0 0; } }
+@-webkit-keyframes BgGradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes BgGradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 
 /*# sourceMappingURL=estilos.css.map */
