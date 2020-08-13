@@ -191,7 +191,7 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 .carrusel {
-  background-image: url(images/fondo.jpg);
+  background-image: url("../images/Leizo194 fondo.jpg");
   background-attachment: fixed;
   background-color: #cccccc;
   /* Used if the image is unavailable */
