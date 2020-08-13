@@ -13,7 +13,7 @@
 .go-top-button {
   width: 0rem;
   height: 0rem;
-  background: #FF7514;
+  background: #9e2102;
   border-radius: 50%;
   cursor: pointer;
   -webkit-transition: .5s;
@@ -22,7 +22,9 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: -1; }
+  z-index: -1;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568); }
 
 .go-top-button i {
   position: absolute;
