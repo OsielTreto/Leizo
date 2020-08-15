@@ -221,7 +221,9 @@ body {
   color: white; }
 
 .fuenteC {
-  color: white; }
+  color: white;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif; }
 
 .pie {
   background: #323232;
