@@ -189,7 +189,7 @@ body {
 .descripcion_proyecto {
   color: white;
   text-align: justify;
-  font-size: .9rem;
+  font-size: .8rem;
   font-family: 'Open Sans', sans-serif; }
 
 .carrusel {
@@ -264,14 +264,12 @@ a:hover {
   color: #913c00; }
 
 .flip-card {
-  border-radius: 20px;
   width: 250px;
   height: 350px;
   -webkit-perspective: 1000px;
           perspective: 1000px; }
 
 .flip-card-inner {
-  border-radius: 20px;
   position: relative;
   width: 100%;
   height: 100%;
@@ -293,7 +291,6 @@ a:hover {
 
 .flip-card-front,
 .flip-card-back {
-  border-radius: 20px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -361,6 +358,45 @@ a:hover {
 .shadowpadre .shadowhijo:hover {
   -webkit-filter: blur(0px);
           filter: blur(0px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+
+.codigo {
+  color: white;
+  font-size: 2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+.codigo:hover {
+  color: #FF7514;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+
+.web {
+  color: white;
+  font-size: 2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+.web:hover {
+  color: #fffc33;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+
+.youtube {
+  color: white;
+  font-size: 2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  -webkit-transition: .2s;
+  transition: .2s; }
+
+.youtube:hover {
+  color: #d80000;
   -webkit-transform: scale(1.1);
           transform: scale(1.1); }
 
