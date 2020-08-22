@@ -1,3 +1,7 @@
+document.documentElement.addEventListener('touchmove', function (event) {
+    event.preventDefault();
+}, false);
+
 window.onscroll = function () {
     if (document.documentElement.scrollTop > 100) {
         document.querySelector('.go-top-container')
