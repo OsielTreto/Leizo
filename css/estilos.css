@@ -277,6 +277,78 @@ a:hover {
 .correo:hover {
   color: #913c00; }
 
+.sm-col {
+  width: 250px;
+  height: 350px;
+  background: linear-gradient(150deg, #494949, #181818);
+  background-size: 400% 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-animation: BgGradient 10s ease infinite;
+          animation: BgGradient 10s ease infinite;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
+.sm-col:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 1; }
+
+.sm-image {
+  height: 125px; }
+
+.sm-description {
+  background: linear-gradient(150deg, #ca6d2a, #b60e0e);
+  background-size: 400% 300%;
+  -webkit-animation: BgGradient 3s ease infinite;
+          animation: BgGradient 3s ease infinite;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
+.sm-description a {
+  font-size: 2.5em !important;
+  color: #1d70bd;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+
+.sm-description a:hover {
+  color: #a8a8a8; }
+
+.sm-description h6 {
+  font-size: 2.5em; }
+
+.sm-description:hover {
+  opacity: 1; }
+
 .flip-card {
   width: 250px;
   height: 350px;
